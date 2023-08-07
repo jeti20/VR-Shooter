@@ -7,12 +7,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public int score;
-    public int amoutOfBullets;
+    public float score;
+    public float amoutOfBullets;
 
     private void Awake()
     {
         instance = this;
     }
+
+    
     
 }

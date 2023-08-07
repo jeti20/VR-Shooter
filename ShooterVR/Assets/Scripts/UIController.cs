@@ -7,20 +7,14 @@ using TMPro;
 
 public class UIController : MonoBehaviour
 {//VR
-    
+
     public GameObject scoreText;
     public GameObject bulletsText;
     public TextMeshProUGUI accuracyText;
     public float accuracy;
 
-    private void Start()
-    {
-        
-    }
-
     private void Update()
     {
-        
         accuracy = GameManager.instance.score / GameManager.instance.amoutOfBullets;
         ScoreManager();
         Debug.Log(accuracy);
@@ -28,14 +22,9 @@ public class UIController : MonoBehaviour
 
     public void ScoreManager()
     {
-        scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + GameManager.instance.score;
-        bulletsText.GetComponent<TextMeshProUGUI>().text = "Bullets: " + GameManager.instance.amoutOfBullets;
-        
-        accuracyText.GetComponent<TextMeshProUGUI>().text = accuracy.ToString("Accuracy: " + accuracy);
+        scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + GameManager.instance.score.ToString("F2");
+        bulletsText.GetComponent<TextMeshProUGUI>().text = "Bullets: " + GameManager.instance.amoutOfBullets.ToString("F2");
+        accuracyText.GetComponent<TextMeshProUGUI>().text = "Accuracy: " + accuracy.ToString("F2");
     }
 
-    public void BulletsAmount()
-    {
-        bulletsText.GetComponent<TextMeshProUGUI>().text = "Bullets: " + GameManager.instance.amoutOfBullets;
-    }
 }
