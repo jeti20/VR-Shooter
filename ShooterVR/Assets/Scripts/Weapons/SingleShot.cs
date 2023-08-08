@@ -4,17 +4,20 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class FireBulletOnActive : MonoBehaviour
+public class SingleShot : MonoBehaviour
 {
     public GameObject bullet;
     public Transform spawnPoint;
-    public float fireSpeed = 20;
+    public float fireSpeed = 60;
 
     private void Start()
     {
         XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
         grabbable.activated.AddListener(FireBullet);
+
     }
+
+   
 
     public void FireBullet(ActivateEventArgs arg)
     {
@@ -23,7 +26,7 @@ public class FireBulletOnActive : MonoBehaviour
         GameObject spawnBullet = Instantiate(bullet);
         spawnBullet.transform.position = spawnPoint.position;
         spawnBullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * fireSpeed;
-        Destroy(spawnBullet, 5);
+        //Destroy(spawnBullet, 5);
         
     }
 
