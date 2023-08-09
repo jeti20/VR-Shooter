@@ -25,11 +25,11 @@ To add:
 - Audio
    - different music for main menu and different for playing
 - Weapons
- - sound of shooting
- - magizne - maybe
- - recoil
- - possibility to seting full auto or singe shot in rifle
- - Did a shelf for weapons with sockets
- - Add sockets at player for weapons 
+  - sound of shooting
+  - magizne - maybe
+  - recoil
+  - possibility to seting full auto or singe shot in rifle
+  - Did a shelf for weapons with sockets
+  - Add sockets at player for weapons 
 Visual
  - Adding some better walls?
