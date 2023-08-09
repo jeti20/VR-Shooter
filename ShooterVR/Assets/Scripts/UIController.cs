@@ -11,20 +11,28 @@ public class UIController : MonoBehaviour
     public GameObject scoreText;
     public GameObject bulletsText;
     public TextMeshProUGUI accuracyText;
-    public float accuracy;
+    public TextMeshProUGUI timeText;
+    private float accuracy;
 
     private void Update()
     {
         accuracy = GameManager.instance.score / GameManager.instance.amoutOfBullets;
         ScoreManager();
-        Debug.Log(accuracy);
+        Timer();
+
+
     }
 
     public void ScoreManager()
     {
-        scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + GameManager.instance.score.ToString("F2");
-        bulletsText.GetComponent<TextMeshProUGUI>().text = "Bullets: " + GameManager.instance.amoutOfBullets.ToString("F2");
+        scoreText.GetComponent<TextMeshProUGUI>().text = "Score: " + GameManager.instance.score.ToString();
+        bulletsText.GetComponent<TextMeshProUGUI>().text = "Bullets: " + GameManager.instance.amoutOfBullets.ToString();
         accuracyText.GetComponent<TextMeshProUGUI>().text = "Accuracy: " + accuracy.ToString("F2");
+    }
+
+    public void Timer()
+    {
+        timeText.GetComponent<TextMeshProUGUI>().text = "Time: " + GameManager.instance.timeLeft.ToString();
     }
 
 }

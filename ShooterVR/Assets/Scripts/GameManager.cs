@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public float score;
     public float amoutOfBullets;
+    public int timeLeft;
+    public bool timeOver = false;
 
     private void Awake()
     {
