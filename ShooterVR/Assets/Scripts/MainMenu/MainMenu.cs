@@ -6,10 +6,17 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
+
     // Ta metoda bêdzie wywo³ywana po klikniêciu przycisku
     public void LoadScene(string sceneToLoad)
     {
         SceneManager.LoadScene(sceneToLoad);
     }
+
+    public void StartRound()
+    {
+
+    }
+
 
 }

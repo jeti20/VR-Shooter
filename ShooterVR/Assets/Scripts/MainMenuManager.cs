@@ -15,6 +15,7 @@ public class MainMenuManager : MonoBehaviour
     {
         if  (showButton.action.WasPressedThisFrame())
         {
+            Debug.Log("MenuOpen");
             menu.SetActive(!menu.activeSelf);
 
             menu.transform.position = head.position + new Vector3(head.forward.x, 0, head.forward.z).normalized * spawnDistance;

@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public float score;
     public float amoutOfBullets;
-    public int timeLeft;
+    public int timeLeft = 10;
     public bool timeOver = false;
 
     private void Awake()

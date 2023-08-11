@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     private bool countdownStarted = false;
 
-    public int timeLeft= 5 ;
+    private int timeLeft;
 
 
     private void Update()
