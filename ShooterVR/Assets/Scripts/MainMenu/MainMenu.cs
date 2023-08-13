@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    //bool gameON = GameManager.instance.gameON;
-
     // Ta metoda bêdzie wywo³ywana po klikniêciu przycisku
     public void LoadScene(string sceneToLoad)
     {
@@ -16,21 +14,21 @@ public class MainMenu : MonoBehaviour
     public GameObject menu;
     public void StartRound()
     {
-        GameManager.instance.timeLeft = 10;
-        menu.SetActive(false);
+        GameManager.instance.timeLeft = 10;    
         Debug.Log("StartRound: 10");
     }
 
-    /*private void Update()
+    private void Update()
     {
-        if (gameON == true)
+        if (GameManager.instance.timeLeft != 0)
         {
-            
+            menu.SetActive(false);
         }
         else
         {
             menu.SetActive(true);
+            Debug.Log("KoniecGryMenuSiePojawia");
         }
-    }*/
+    }
 
 }
