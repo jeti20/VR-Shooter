@@ -2,22 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+
+    public static GameManager instance { get; private set; }
 
     public float score;
     public float amoutOfBullets;
-    public int timeLeft = 10;
-    public bool timeOver = false;
-
+    public int timeLeft = 0;
+    //public bool gameON = false;
+    
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-    }
+        // If there is an instance, and it's not me, delete myself.
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
 
-    
-    
+            instance = this;
+        }
+    }
 }

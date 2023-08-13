@@ -10,10 +10,12 @@ public class Spawning : MonoBehaviour
     public GameObject Cube;
     bool spawned = false;
 
+
+
     void Update()
     {
 
-        if (GameManager.instance.timeOver == false)
+        if (GameManager.instance.timeLeft != 0)
         {
             if (spawned == false)
             {

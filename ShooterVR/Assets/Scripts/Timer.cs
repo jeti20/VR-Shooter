@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
@@ -11,7 +12,7 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        if (!countdownStarted)
+        if (!countdownStarted && GameManager.instance.timeLeft != 0)
         {
             StartCountdown();
         }
@@ -35,7 +36,6 @@ public class Timer : MonoBehaviour
             if (i >=1)
             GameManager.instance.timeLeft--;
         }
-        GameManager.instance.timeOver = true;
         Debug.Log(endmessage);
     }
 }
