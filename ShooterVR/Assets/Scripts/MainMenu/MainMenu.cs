@@ -16,6 +16,8 @@ public class MainMenu : MonoBehaviour
     {
         GameManager.instance.timeLeft = 10;    
         Debug.Log("StartRound: 10");
+        GameManager.instance.amoutOfBullets = 0;
+        GameManager.instance.score = 0;
     }
 
     private void Update()

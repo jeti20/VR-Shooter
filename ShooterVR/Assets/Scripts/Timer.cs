@@ -36,6 +36,7 @@ public class Timer : MonoBehaviour
             if (i >=1)
             GameManager.instance.timeLeft--;
         }
+        countdownStarted = false;
         Debug.Log(endmessage);
     }
 }
