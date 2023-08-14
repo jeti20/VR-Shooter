@@ -10,6 +10,8 @@ public class SingleShot : MonoBehaviour
     public Transform spawnPoint;
     public float fireSpeed = 60;
 
+    public AudioSource fireSound;
+
     private void Start()
     {
         XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
@@ -22,7 +24,8 @@ public class SingleShot : MonoBehaviour
     public void FireBullet(ActivateEventArgs arg)
     {
         BulletCount();
-        Debug.Log(GameManager.instance.amoutOfBullets);
+        fireSound.Play();
+
         GameObject spawnBullet = Instantiate(bullet);
         spawnBullet.transform.position = spawnPoint.position;
         spawnBullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * fireSpeed;
