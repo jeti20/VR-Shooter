@@ -15,6 +15,12 @@
 - Added function to destroy all spawned cubes after time is over
 - Added that this time is displaying how much time is left
 
+17.08.2023
+- Main Menu clean up - modidify scripts for main menu for being more understandable
+- Added sound for blasting cubes
+- Added sound for shooting 
+
+
 
 To add:
 - Main menu:

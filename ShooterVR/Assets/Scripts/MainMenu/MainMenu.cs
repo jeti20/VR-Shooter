@@ -11,26 +11,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 
-    public GameObject menu;
-    public void StartRound()
-    {
-        GameManager.instance.timeLeft = 10;    
-        Debug.Log("StartRound: 10");
-        GameManager.instance.amoutOfBullets = 0;
-        GameManager.instance.score = 0;
-    }
+    
 
-    private void Update()
+    public void Exit()
     {
-        if (GameManager.instance.timeLeft != 0)
-        {
-            menu.SetActive(false);
-        }
-        else
-        {
-            menu.SetActive(true);
-            Debug.Log("KoniecGryMenuSiePojawia");
-        }
+        Application.Quit();
     }
 
 }
