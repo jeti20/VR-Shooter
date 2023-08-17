@@ -19,6 +19,7 @@
 - Main Menu clean up - modidify scripts for main menu for being more understandable
 - Added sound for blasting cubes
 - Added sound for shooting 
+- Added some visuals for MainMenu scene
 
 
 
