@@ -42,7 +42,7 @@ public class MenuInGame : MonoBehaviour
 
     public void StartRound()
     {
-        GameManager.instance.timeLeft = 10;
+        GameManager.instance.timeLeft = 60;
         Debug.Log("StartRound: 10");
         GameManager.instance.amoutOfBullets = 0;
         GameManager.instance.score = 0;
