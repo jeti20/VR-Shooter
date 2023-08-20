@@ -29,7 +29,10 @@ public class SingleShot : MonoBehaviour
         GameObject spawnBullet = Instantiate(bullet);
         spawnBullet.transform.position = spawnPoint.position;
         spawnBullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * fireSpeed;
-        //Destroy(spawnBullet, 5);
+        if (GameManager.instance.timeLeft == 0 )
+        {
+            Destroy(this);
+        }
         
     }
 
