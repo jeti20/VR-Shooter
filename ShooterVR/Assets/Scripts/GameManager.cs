@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     public float score;
     public float amoutOfBullets;
     public int timeLeft = 0;
-   
+    public AudioSource source;
+
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.

@@ -3,7 +3,9 @@ guid: 8c02f75fa01ff3b41b9c5246e199f531
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - blastEffect: {instanceID: 0}
+  - BlastSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
