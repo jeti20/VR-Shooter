@@ -21,22 +21,7 @@
 - Added sound for shooting 
 - Added some visuals for MainMenu scene
 
-
-
-To add:
-- Main menu:
-  - options
-  - exit
-  - color change when hovering the button, maybe sound
-  - sound when pressing the button
-- Audio
-   - different music for main menu and different for playing
-- Weapons
-  - sound of shooting
-  - magizne - maybe
-  - recoil
-  - possibility to seting full auto or singe shot in rifle
-  - Did a shelf for weapons with sockets
-  - Add sockets at player for weapons 
-Visual
- - Adding some better walls?
+27.28.08.2023
+- Added bg music
+- Changed shot sound
+- Turned off movement in main menu
