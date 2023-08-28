@@ -11,7 +11,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 
-    
+    public void Website()
+    {
+        Application.OpenURL("https://github.com/jeti20");
+    }
 
     public void Exit()
     {
