@@ -21,7 +21,21 @@
 - Added sound for shooting 
 - Added some visuals for MainMenu scene
 
-27.28.08.2023
+27-28.08.2023
 - Added bg music
 - Changed shot sound
 - Turned off movement in main menu
+
+04.09.2023
+- bg music loop
+
+End of development
+
+GamePlay on YouTube.
+Link: https://youtu.be/mLj4tqGK0S4
+
+MainMenu
+![](https://github.com/jeti20/VR-Shooter/blob/Final/media/Menu.PNG)
+
+InGame https://github.com/jeti20/VR-Shooter/blob/Final/media/gameplay.PNG
+![](https://github.com/jeti20/VR-Shooter/blob/Final/media/gameplay.PNG)
