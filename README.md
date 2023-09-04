@@ -37,5 +37,5 @@ Link: https://youtu.be/mLj4tqGK0S4
 MainMenu
 ![](https://github.com/jeti20/VR-Shooter/blob/Final/media/Menu.PNG)
 
-InGame https://github.com/jeti20/VR-Shooter/blob/Final/media/gameplay.PNG
+InGame
 ![](https://github.com/jeti20/VR-Shooter/blob/Final/media/gameplay.PNG)
